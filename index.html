@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CCXP</title>
+    <style>
+        body {
+            background-color: #FFF;
+            padding: 0px;
+            margin: 0px;
+        }
+        #inicial {
+            width: auto;
+            height: 118px;
+            background: #FFD900;
+        }
+        #image1 {
+            padding-top: 27px;
+            padding-left: 58px;
+            padding-bottom: 28px;
+            width: 202px;
+            height: 63px;
+        }
+        div .text {
+            width: 802px;
+            height: 694px;
+        }
+        .info {
+            background: #FFF;
+           display: flex;
+         
+        }
+        .text {
+            background: #514988;
+        }
+        #rev {
+            color: #F3C61F;
+            text-align: center;
+            font-family: Verdana;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        #date {
+            color: #FFF;
+            font-family: Verdana;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+        #informacoes {
+            color: #FFF;
+            font-family: Verdana;
+            font-size: 29px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+        #inicio {
+            color: #E33881;
+            margin-left: 30px;
+            font-family: Verdana;
+            font-size: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #arlequina {
+            width: 880px;
+            height: 510px;
+            margin-left: 10px;
+            
+        }
+        #entrar {
+            color: #F3C61F;
+           margin-left: 89px;
+            font-family: Verdana;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+        }
+        #ingressos {
+            display: flex;
+            flex-direction: row;
+        }
+        #entrou {
+            margin-left: 81px;
+            margin-bottom: 38px;
+            
+        }
+        button {
+            width: 596px;
+            height: 148px;         
+            border-radius: 20px;
+            background: #514988;
+            color: #FFF;
+            margin-left: 80px;
+            margin-top: 25px;
+            font-family: Verdana;
+            font-size: 42px; 
+        }
+
+        button:hover {
+            cursor: pointer;
+            color: #F3C61F;
+        } 
+        .timer {
+        display: grid;        
+        grid-auto-flow: column;        
+        margin-top: -10px;
+        margin-bottom: -30px;
+        color: #514988;
+        text-align: center;
+        font-family: Verdana;
+        font-size: 30px;  
+                        
+        }
+
+    </style>
+</head>
+<body>
+    <div id="inicial">
+        <img id="image1" src="./imagens/CCXP22.svg" alt="">
+    </div>
+
+    <div class="info">
+        <div class="text">
+            <h1 id="rev"> REVIVA O ÉPICO </h1>
+            <h2 id="date"> DE 01 A 04 DE DEZEMBRO </h2>
+            <p id="informacoes">
+                Você consegue sentir? É aquela sensação <br>
+                de finalmente poder falar em voz alta: "estamos <br>
+                em casa". Sim, em dezembro de 2022, <br>
+                teremos a volta da CCXP física. Mas não será <br>
+                qualquer CCXP, vai ser a maior de todos os <br>
+                tempos. Prepare-se para visitar seus <br>
+                universos favoritos, explorar o Artists' Valley, <br>
+                se emocionar nos auditórios e encontrar <br>
+                aventuras épicas a cada passo <br>
+                pelos nossos corredores.
+            </p>
+        </div>
+        <div class="video">
+
+            <div class="timer">
+                <div>
+                    <h1 id="dia"> 00D </h1>
+                </div>
+                <div>
+                    <h1 id="hora"> 00H </h1>                
+                </div>
+                <div>
+                    <h1 id="minuto"> 00M </h1>                
+                </div>
+                <div>
+                    <h1 id="segundo"> 00S </h1>                
+                </div>
+            </div>
+
+            <p id="inicio">
+                <b>PARA A MAIOR CCXP DE TODOS OS TEMPOS</b>
+            </p>
+            <video controls loop id="arlequina"><source src="Arlequina.mp4" type="video/mp4"></video>
+
+        </div>
+    </div>
+
+    <div class="exit">
+
+        <h1 id="entrar">
+            AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!
+        </h1>
+
+        <div id="ingressos">
+            <div id="entrou">
+                <img src="./imagens/quinta.svg" alt="">
+                <img src="./imagens/sexta.svg" alt="">
+                <img src="./imagens/sabado.svg" alt="">
+                <img src="./imagens/domingo.svg" alt="">
+            </div> 
+
+            <button> <b>GARANTA O SEU!</b></button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
